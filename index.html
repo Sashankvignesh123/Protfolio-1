@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sashank Vignesh</title>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+  <style>
+    body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    
+}
+
+
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: url("vp.png") center/cover fixed ; */
+    padding-top: 1.2rem;
+}
+
+
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: #dff1e5;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: rgb(46, 231, 14);
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 8, 8, 0.3);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 10rem;
+    width: 8rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px rgb(7, 210, 68);
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+
+/* Contact Form */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+  </style>
+
+</head>
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">
+                    Sashank Vignesh
+                </h1>
+            </div>
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/posina-sashank-vignesh-8b5839240/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="my-image">
+                <img src="./vp..jpg">
+                
+                
+            </div>
+
+            <div id="about-para">
+
+                <p>
+                    Hello! I'm Sashank Vignesh, a passionate <span class="text-highlight">MERN stack developer</span>.  I specialize in building dynamic and responsive web applications using<span class="text-highlight">MongoDB, Express.js, React.js, and Node.js</span> I have a strong foundation in front-end and back-end development, and I love tackling challenging problems and learning new technologies. 
+                </p>
+            
+
+            </div>
+
+        </section>
+
+
+
+        <section id="skills">
+            <h1 class="section-heading mb75px ">
+                <span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </span>
+                <span> SKILLS </span>
+            </h1>
+
+            <div class="skills-display">
+
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> Java </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-five-percent mb-orange">
+                        <div class="skill-name">
+                            <span> HTML </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-light-purple">
+                        <div class="skill-name">
+                            <span> CSS </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-teal">
+                        <div class="skill-name">
+                            <span> Javascript </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> React.js </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-light-purple">
+                        <div class="skill-name">
+                            <span>Node.js </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> Express.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> Mongo DB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="experience">
+
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <span> Work Experience </span>
+            </h1>
+
+            <div class="timeline">
+
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="data:image/jpeg;base64,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">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation:Intern </h3>
+                        <h4 class="experience-company-name"> Oasis Infobyte </h4>
+                        <h5 class="experience-duration m0"> Nov 2023 – Dec 2023  Remote </h5>
+
+                        <p class="experience-description text-align-justify">  Led the design and implementation of a captivating landing page for WB'S, a car selling company. Demonstrated proficiency in CSS animation effects and responsive design techniques, resulting in a 25% increase in audience interaction and a 20% decrease in exit rate .<br><br>
+
+                            In addition to this achievement, I undertook a fascinating project developing a temperature converter using JavaScript, CSS, and HTML. This interactive tool seamlessly converts temperatures between Celsius, Fahrenheit, and Kelvin, demonstrating my proficiency in front-end development and problem-solving skills .</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Course:Front-End Development </h3>
+                        <h4 class="experience-company-name"> Coding Ninjas </h4>
+                        <h5 class="experience-duration m0"> May 2023 to July 2023 </h5>
+                        <p class="experience-description text-align-justify">I have developed various projects showcasing my front-end development skills using HTML, CSS, JavaScript, and React.js.<br><br> Notable projects include an interactive Temperature Converter for Celsius, Fahrenheit, and Kelvin; a responsive Personal Portfolio featuring CSS animations; a Weather App providing real-time updates and forecasts; and several clone projects of popular websites using React.js, enhancing my understanding of components, state management, and routing. These projects highlight my ability to create functional, responsive, and visually appealing web applications.
+
+
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue"> Course:Back-End Development</h3>
+                        <h4 class="experience-company-name"> Coding Ninjas </h4>
+                        <h5 class="experience-duration m0"> July 2023 - Oct 2023 </h5>
+
+                        <p class="experience-description text-align-justify"> I have developed several backend projects demonstrating my proficiency in server-side technologies, particularly using Node.js, Express, Mongoose, MongoDB, and Socket.io. <br><br>One notable project is a Chat Application, which utilizes these technologies to enable real-time messaging. This application showcases my ability to handle database interactions, manage server-side logic, and implement real-time communication features effectively. These projects underline my capability to build robust and scalable backend systems.. </p>
+                    </div>
+                </div>
+
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="education">
+
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+
+            <div class="timeline">
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> secondary education </h3>
+                        <h4 class="experience-company-name "> Tirumala  </h4>
+                        <h5 class="experience-duration m0"> June 2018 - April 2019  </h5>
+
+                        <p class="experience-description text-align-justify">"I completed my secondary education at Tirumala School, where I was provided with a rigorous academic curriculum combined with opportunities for holistic development. Tirumala School fostered an environment of academic excellence and encouraged active participation in extracurricular activities, shaping me into a well-rounded individual ready to take on new challenges. </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue">  </h3>
+                        <h4 class="experience-company-name "> Tirumala Junior College</h4>
+                        <h5 class="experience-duration m0">  May 2019 -  Oct 2021 </h5>
+                        <p class="experience-description text-align-justify">"I completed my Intermediate education at Tirumala Junior college, where I was provided with a rigorous academic curriculum combined with opportunities for holistic development. Tirumala College fostered an environment of academic excellence and encouraged active participation in extracurricular activities, shaping me into a well-rounded individual ready to take on new challenges." </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> B-Tech</h3>
+                        <h4 class="experience-company-name "> Vishnu Institute of Technology </h4>
+                        <h5 class="experience-duration m0"> Nov 2021 -  May 2025 </h5>
+
+                        <p class="experience-description text-align-justify">"I am currently pursuing my BTech 4 Year in Artificial Intelligence and Data Science at Vishnu Institute of Technology. This program has provided me with a unique opportunity to delve deep into cutting-edge technologies such as machine learning, data mining, and natural language processing. Through rigorous coursework and hands-on projects, I have honed my skills in analyzing complex data sets, developing intelligent algorithms, and leveraging advanced computational techniques to extract meaningful insights. Vishnu Institute of Technology's interdisciplinary approach and state-of-the-art facilities have enriched my learning experience, empowering me to explore the frontiers of artificial intelligence and contribute meaningfully to the ever-evolving field of data science.</p>
+                    </div>
+                </div>
+                
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolio">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span> Portfolio </span>
+            </h1>
+
+            <div id="portfolio-container">
+
+                
+                <div class="portfolio-image-container">
+                    <a href=""> <img src="https://play-lh.googleusercontent.com/GdXjVGXQ90eVNpb1VoXWGT3pff2M9oe3yDdYGIsde7W9h3s2S6FDLfo1uO-gljBZ1QXO"> </a>
+                    
+                    <div class="portfolio-details">
+                        <p>
+                            Weather-App
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Chat-Application
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1DzaMqbcRfwszjP1thananug1haMDr1DSF7UuKsJc-WBrfkE8">
+                    <div class="portfolio-details">
+                        <p>
+                            
+                            E-com website
+                        </p>
+                    </div>
+
+                </div>
+                
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    <p> I am grateful for the opportunity to apply for this position and look forward to the possibility of contributing to your team. Please feel free to reach out to me if you have any questions or need further information. </p>
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Andhra Pradesh, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>9381435269</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>sashank.85033@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center social-icons">
+
+                <ul class="horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/posina-sashank-vignesh-8b5839240/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/Sashankvignesh123" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sashank.85033@gmail.com" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/sashankvignesh.p?mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
